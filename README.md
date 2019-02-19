@@ -3,6 +3,7 @@
 ### 💥☠️💣🌀👊🏼
 
 
+More will go here, but for now, enjoy this [custom Dark Theme](https://raw.githubusercontent.com/kmfd/m/master/drudge_dark.css) for Drudge Report.
 
 
 
