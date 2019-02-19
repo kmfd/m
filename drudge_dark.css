@@ -59,8 +59,8 @@ table {
 }
 
 td[width="33%"] {
-    display: table-cell !important;
-    width: 33% !important;
+    display: inline-block !important;
+    width: 30% !important;
     padding: 0 1%;
 }
 
