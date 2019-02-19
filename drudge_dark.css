@@ -77,6 +77,10 @@ table {
     padding: 0px !important;
 }
 
+td tt {
+    font-family: lucida console !important;
+}
+
 td tt img {
     /* makes column images a little more dignified */
     display: block !important;
