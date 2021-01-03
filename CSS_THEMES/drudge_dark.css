@@ -101,7 +101,7 @@ img[src*="logo9.gif"] {
     width: 0px !important;
     margin: 0 100px;
     padding: 0 0 100px 610px !important;
-    background: url("https://raw.githubusercontent.com/kmfd/m/master/drudgehat.png") no-repeat !important;
+    background: url("https://github.com/kmfd/m/raw/master/CSS_THEMES/drudgehat.png") no-repeat !important;
     background-size: 100% !important;
 }
 }
