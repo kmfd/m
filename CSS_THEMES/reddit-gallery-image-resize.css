@@ -1,0 +1,85 @@
+/*
+kmfd/m 
+Reddit gallery image resize for Stylus
+*/
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain("old.reddit.com") {
+.side {
+    float: unset;
+    width: 300px;
+    z-index: 1;
+    position: absolute;
+    top: 150px;
+    right: 0;
+}
+
+
+
+#search {
+border: 2px solid rgba(0, 0, 0);
+    top: -32px;
+    width: 240px;
+}
+
+#search input[type="text"] {
+    color: #000;
+    width: 240px;
+}
+
+.media-gallery {
+    position: relative;
+    left: 0;
+}
+
+.media-preview {
+    overflow: visible;
+    padding-bottom: 24px;
+}
+.entry {
+    overflow: visible;
+}
+
+.media-preview-content:not(.gallery-tile-content) {
+    z-index: 2;
+    resize: both;
+    overflow: hidden;
+    padding-bottom: 24px;
+    max-width: unset !important;
+    width: max-content;
+    /* Added width */
+}
+
+
+.media-preview .media-preview-content:not(.video-player) {
+    float: unset;
+}
+
+.media-preview img {
+    position: relative;
+    z-index: 10;
+    max-width: 100%;
+    height: 100%;
+    width: auto;
+    margin: 0;
+    left: 0;
+    top: 0;
+}
+
+.preview {
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+}
+
+body > .content {
+    z-index: 1;
+    margin: 0 auto !important;
+    width: calc(100% - 335px);
+    transform: translateX(-161px);
+    overflow: visible;
+    position: relative;
+}
+}
