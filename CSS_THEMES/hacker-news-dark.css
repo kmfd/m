@@ -1,0 +1,364 @@
+/* ==UserStyle==
+@name Dark Hacker News
+@namespace news.ycombinator.com
+@description A kmfd fork of Cris' dark theme for Hacker News
+@version 0.0.1
+@author Cris Mihalache <f3rno64@gmail.com>
+@author github.com/kmfd/m
+==/UserStyle== */
+@-moz-document url-prefix("https://news.ycombinator.com") {
+    html,
+    body {
+        background: #111;
+        width: 100%;
+    }
+
+    .c00 {
+        color: #fff;
+    }
+
+
+
+    body {
+        margin: 0;
+    }
+
+
+    .c00 a:link,
+    a,
+    a u,
+    p a,
+    a:link {
+        color: #3bb4ec;
+
+        &:hover {
+            color: #59bfee;
+            cursor: pointer;
+        }
+    }
+
+    a:visited {
+        color: #86afc2;
+    }
+
+    .comhead a.hnuser {
+        color: #bfbfbf !important;
+    }
+
+    table#hnmain {
+
+        td.title {
+            font-family: monospace;
+        }
+
+        td.title + td {
+            color: #FFA07A;
+        }
+
+
+        tr:first-child td:first-child:has(img[src="y18.svg"]) {
+            background-color: #8a4415;
+            color: #eee;
+            a {
+                color: #eee;
+                &:hover {
+                    color: #fff;
+                    text-decoration: underline;
+                    cursor: pointer;
+                }
+            }
+        }
+
+
+        & > tbody:first-child > tr:last-child td {
+            padding-top: 16px;
+
+            td {
+                padding-top: 4px;
+            }
+
+            center {
+                padding: 16px 0;
+            }
+        }
+    }
+
+    input,
+    textarea {
+        margin-top: 16px;
+        padding: 4px 8px;
+        background: #aaa;
+        border: 2px solid #333;
+
+        &:hover,
+        &:active {
+            background: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .yclinks + br {
+        display: none;
+    }
+
+
+    span.age a,
+    .subline span:first-child,
+    .subline a:last-child {
+        color: #d9932a !important;
+
+        &:hover {
+            color: #f7bf58 !important;
+        }
+    }
+
+
+
+
+
+    .yclinks a {
+        color: #aaa !important;
+
+        &:hover {
+            color: #fff !important;
+            text-decoration: underline;
+        }
+    }
+
+    td.title .titleline a,
+    a.morelink {
+        color: #ccc;
+
+        &:hover {
+            color: #fff;
+            text-decoration: underline;
+        }
+    }
+    
+    
+
+center {
+
+    color: #fff;
+
+
+    a:link {
+        color: #aaa;
+    }
+}
+    
+    
+}
+
+
+@-moz-document url-prefix("https://news.ycombinator.com/user") {
+    form {
+        padding-left: 32px;
+    }
+
+    td {
+        padding: 8px 0;
+
+        &[valign="top"] {
+            padding-right: 16px;
+            text-align: right;
+        }
+    }
+
+    input,
+    textarea {
+        margin: 0;
+    }
+
+    td i {
+        color: #eee;
+    }
+
+    table + br + input {
+        margin-left: 110px;
+    }
+}
+
+@-moz-document url-prefix("https://news.ycombinator.com/submit") {
+    table#hnmain {
+        tr {
+            &:not(:first-child) td {
+                padding: 8px !important;
+
+                &:first-child {
+                    color: #fff;
+                }
+
+                input {
+                    margin: 0;
+                }
+            }
+
+            &:last-child td {
+                color: #eee;
+            }
+        }
+    }
+}
+
+@-moz-document url-prefix("https://news.ycombinator.com/front") {
+    table#hnmain > tbody:first-child > tr td div {
+        color: #fff;
+    }
+}
+
+@-moz-document url-prefix("https://news.ycombinator.com/item") {
+    table#hnmain {
+        background: #333;
+        width: 100%;
+    }
+
+    span.pagetop a {
+        color: #fff !important;
+    }
+
+    span.commtext,
+    p {
+        color: #fff !important;
+    }
+
+    .reply p a {
+        color: #999;
+    }
+
+    tr.athing:not(:first-child) > td {
+        padding-top: 16px;
+    }
+
+    td.title {
+        span.titleline a {
+            color: #e0e0e0 !important;
+
+            &:hover {
+                color: #fff !important;
+            }
+        }
+
+        a.morelink {
+            color: #ccc !important;
+
+            &:hover {
+                color: #fff !important;
+                cursor: pointer;
+            }
+        }
+    }
+
+    table#hnmain {
+        img {
+            margin: 0 8px;
+        }
+
+        & > tbody:first-child > tr:first-child > td:first-child {
+            padding: 8px 16px;
+        }
+    }
+
+    table + br,
+    table + br + br {
+        display: none;
+    }
+
+    table.fatitem .toptext {
+        &,
+        p {
+            color: #eee !important;
+            line-height: 1.5;
+        }
+    }
+}
+
+@-moz-document url-prefix("https://news.ycombinator.com/x") {
+    table {
+        background: #ff6600;
+        color: #000 !important;
+
+        tbody tr {
+            &:first-child td {
+                padding: 4px 0;
+                background: #ff6600;
+            }
+
+            &:last-child td {
+                padding: 4px 0;
+            }
+
+            &:first-child td:first-child {
+                padding-left: 8px;
+            }
+
+            &:first-child td:first-child img {
+                margin-right: 8px;
+            }
+
+            &:first-child td {
+                padding-right: 8px;
+            }
+        }
+    }
+}
+
+@-moz-document url-prefix("https://news.ycombinator.com/") {
+    html,
+    body,
+    table#hnmain {
+        background: #1A1A1A;
+        width: 100%;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    table#hnmain > tbody:first-child > tr:first-child > td:first-child {
+        padding: 8px 16px;
+    }
+
+    table#hnmain img {
+        margin: 0 8px;
+    }
+
+    td.subtext {
+        padding-bottom: 4px;
+    }
+
+    tr.athing:first-child td {
+        padding-top: 4px;
+    }
+
+    tr.athing td:first-child {
+        padding-left: 16px;
+    }
+
+    td.title {
+        padding-bottom: 0;
+    }
+
+    td.votelinks {
+        padding: 0 4px;
+    }
+}
+
+@-moz-document url-prefix("https://news.ycombinator.com/newcomments") {
+    .comment .commtext {
+        color: #ccc;
+    }
+
+    tr.athing:not(:last-child) td {
+        padding-bottom: 16px;
+    }
+
+    .comment .commtext.c00 a {
+        color: #6969ff;
+
+        &:hover {
+            color: #4c4cff;
+            cursor: pointer;
+        }
+    }
+}
